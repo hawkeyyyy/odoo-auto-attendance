@@ -4,7 +4,7 @@ param([switch]$SkipTests)
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
-python -m pip install --disable-pip-version-check -q -r requirements.txt
+python -m pip install --disable-pip-version-check -q -r requirements-dev.txt
 if (-not $SkipTests) {
     python -m pytest -q
     if ($LASTEXITCODE -ne 0) { throw "Tests failed" }

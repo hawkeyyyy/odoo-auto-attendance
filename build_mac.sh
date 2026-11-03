@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 PY="${PYTHON:-python3}"
-"$PY" -m pip install --disable-pip-version-check -q -r requirements.txt
+"$PY" -m pip install --disable-pip-version-check -q -r requirements-dev.txt
 if [[ "${1:-}" != "--skip-tests" ]]; then
     "$PY" -m pytest -q
 fi

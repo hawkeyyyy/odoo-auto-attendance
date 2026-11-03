@@ -1,8 +1,6 @@
+# Runtime dependencies
 httpx>=0.27,<1
-pystray>=0.19
+pystray>=0.19          # pulls in pyobjc (Quartz/Cocoa) on macOS
 Pillow>=10
 psutil>=5.9
 keyring>=24
-# development / packaging
-pytest>=8
-pyinstaller>=6

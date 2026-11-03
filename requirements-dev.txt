@@ -1,0 +1,4 @@
+# Development, tests and packaging
+-r requirements.txt
+pytest>=8
+pyinstaller>=6.9
